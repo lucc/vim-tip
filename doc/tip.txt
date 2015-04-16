@@ -1,0 +1,42 @@
+*tip.txt* *tip-of-the-day*
+
+		   VIM TIP OF THE DAY    by Lucas Hoffmann
+
+1. Introduction							|tip-intro|
+2. Commands							|tip-commands|
+3. Author, License and further information			|tip-about|
+
+==============================================================================
+1. Introduction							   *tip-intro*
+
+This plugin provides a |VimTip| command to display a random help topic.  It is
+intended to provide the functionality of the popup tip windows found in some
+applications.  It is also a great way to discover the unknown depths of your
+editor.  You could for example add |VimTip| as the last command to you |vimrc|
+file.
+
+==============================================================================
+2. Commands			      *tip-commands* *tip-of-the-day-commands*
+
+The plugin provides two commands.
+
+								     *:VimTip*
+:VimTip			Open a help window displaying a |help| topic that was
+			randomly selected from all help topics.  When you
+			close this window the plugin will ask you if you want
+			to keep this help topic in the list of potential tips.
+			If you answer "no" all future invocations will ignore
+			this specific help topic.
+
+								 *:VimTipInfo*
+:VimTipInfo		Display the location of the ignore file and the last
+			help topic selected by |VimTip|.
+
+==============================================================================
+3. Author, License and further information			   *tip-about*
+
+This plugin was written by Lucas Hoffmann.  It is hosted on Github, where bug
+reports can be given: https://github.com/lucc/vim-tip .  The plugin is
+licenced under the WTFPL: http://www.wtfpl.net/txt/copying/
+
+ vim:tw=78:ts=8:ft=help:norl:
